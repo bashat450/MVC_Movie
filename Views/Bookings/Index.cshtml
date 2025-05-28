@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Booking>
+
+<table class="table">
+    <tr>
+        <th>Customer</th>
+        <th>Movie</th>
+        <th>Seats</th>
+        <th>Booking Date</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Customer.FullName</td>
+            <td>@item.Movie.Title</td>
+            <td>@item.NumberOfSeats</td>
+            <td>@item.BookingDate.ToString("dd/MM/yyyy HH:mm")</td>
+        </tr>
+    }
+</table>

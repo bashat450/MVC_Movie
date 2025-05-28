@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Search", "Movies", FormMethod.Get))
+{
+    <p>
+        Title: @Html.TextBox("title")
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </p>
+}

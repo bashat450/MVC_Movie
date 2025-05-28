@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Movie.Controllers
+namespace MovieBookingSystem.Controllers
 {
     public class HomeController : Controller
     {
@@ -12,5 +12,7 @@ namespace Movie.Controllers
         {
             return View();
         }
+
+        
     }
 }
